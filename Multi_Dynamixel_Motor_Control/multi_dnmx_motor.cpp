@@ -24,12 +24,8 @@ bool CMulti_DNMX_Motor::initialization(){
     //int GoalPos[2] = {0, 4095}; // for Ex series
     deviceIndex = 0;
     PresentPos[0] = 0;
-    PresentPos[1] = 0;
-    PresentPos[2] = 0;
 
     Motor_ID[0] = MOTOR_ID_1;
-    Motor_ID[1] = MOTOR_ID_2;
-    Motor_ID[2] = MOTOR_ID_3;
 
     printf( "\n\n Motor initialization \n\n" );
 

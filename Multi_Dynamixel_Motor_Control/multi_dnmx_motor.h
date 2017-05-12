@@ -26,8 +26,6 @@
 #define NUM_OF_MOTORS           3       // Number of motors
 
 #define MOTOR_ID_11              1 // Motor 1 ID
-#define MOTOR_ID_12              2 // Motor 2 ID
-#define MOTOR_ID_13              3 // Motor 3 ID
 
 
 void PrintCommStatus(int CommStatus);
