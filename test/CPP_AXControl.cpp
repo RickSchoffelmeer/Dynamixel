@@ -4,7 +4,7 @@ using namespace std;
 
 #include "SerialPort.h"
 #include "Dynamixel.h"
-#include <wiringPi>
+#include <wiringPi.h>
 
 int main() {
 	cout << "AX Control starts" << endl; // prints AX Control
