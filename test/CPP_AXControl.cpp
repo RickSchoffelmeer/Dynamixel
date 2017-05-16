@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 	cout << "AX Control starts" << endl; // prints AX Control
     
-    pinmode(5, OUTPUT);
+    pinMode(5, OUTPUT);
     digitalWrite(5, LOW);
 	int error=0;
 	int idAX12=11;
