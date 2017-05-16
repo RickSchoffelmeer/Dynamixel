@@ -174,7 +174,8 @@ int Dynamixel::getReadAX12TemperatureCommand(byte id)
 
     byte checksum = checkSumatory(buffer, pos);
     buffer[pos++] = checksum;
-
+    
+    printf("\ncurrent temp=<%i>\n", pos);
     return pos;
 }
 
