@@ -43,7 +43,7 @@ int SerialPort::connect(char *device) {
 	 * Enable receiver.
 	 */
 
-	terminalAttributes.c_cflag = B57600 | CS8 | CLOCAL | CREAD;
+	terminalAttributes.c_cflag = B1000000 | CS8 | CLOCAL | CREAD;
 
 	/*
 	 * input modes: c_iflag flag constants:
