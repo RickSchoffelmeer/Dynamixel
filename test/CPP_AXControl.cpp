@@ -16,7 +16,7 @@ int main() {
 	cout << "AX Control starts" << endl; // prints AX Control
 
 	int error=0;
-	int idAX12=22;
+	int idAX12=11;
 
 	SerialPort serialPort;
 	Dynamixel dynamixel;
