@@ -10,9 +10,10 @@
 
 #include "SerialPort.h"
 
+char dev[14] = "//dev//ttyAMA0";
 
 int SerialPort::connect() {
-	return connect("//dev//ttyAMA0");
+	return connect(dev);
 }
 
 int SerialPort::connect(char *device) {

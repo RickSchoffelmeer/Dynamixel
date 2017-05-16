@@ -20,9 +20,10 @@ int main() {
 
 	SerialPort serialPort;
 	Dynamixel dynamixel;
+    char dev[14] = "//dev//ttyAMA0";
 
 
-	if (serialPort.connect("//dev//ttyAMA0")!=0) {
+	if (serialPort.connect(dev)!=0) {
 		dynamixel.sendTossModeCommand(&serialPort);
 
 		int pos=dynamixel.getPosition(&serialPort, idAX12);
