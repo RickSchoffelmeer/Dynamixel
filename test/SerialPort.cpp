@@ -12,7 +12,7 @@
 
 
 int SerialPort::connect() {
-	return connect("//dev//ttyS0");
+	return connect("//dev//ttyAMA0");
 }
 
 int SerialPort::connect(char *device) {
