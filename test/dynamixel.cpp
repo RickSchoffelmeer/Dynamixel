@@ -108,6 +108,8 @@ int Dynamixel::getReadAX12PositionCommand(byte id)
 
     byte checksum = checkSumatory(buffer, pos);
     buffer[pos++] = checksum;
+    
+    printf("current possition" pos);
 
     return pos;
 }
