@@ -4,10 +4,13 @@ using namespace std;
 
 #include "SerialPort.h"
 #include "Dynamixel.h"
+#include <wiringPi>
 
 int main() {
 	cout << "AX Control starts" << endl; // prints AX Control
-
+    
+    pinmode(5, OUTPUT);
+    digitalWrite(5, LOW);
 	int error=0;
 	int idAX12=11;
 
@@ -20,11 +23,16 @@ int main() {
 		dynamixel.sendTossModeCommand(&serialPort);
 
 		int pos=dynamixel.getPosition(&serialPort, idAX12);
-
+        
 		if (pos>250 && pos <1023)
+            digitalWrite(5, HIGH);
 			dynamixel.setPosition(&serialPort, idAX12, pos-100);
+            delay(100);
+            digitalWrite(5, LOW);
 		else
 			printf ("\nPosition <%i> under 250 or over 1023\n", pos);
+        
+        
 
 		serialPort.disconnect();
 	}
