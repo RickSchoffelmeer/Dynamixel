@@ -20,7 +20,7 @@ int main() {
 
 	SerialPort serialPort;
 	Dynamixel dynamixel;
-    char dev[14] = "//dev//ttyAMA0";
+    char dev[14] = {'/','/','d','e','v','/','/','t','t','y','A','M','A','0'};
 
 
 	if (serialPort.connect(dev)!=0) {
