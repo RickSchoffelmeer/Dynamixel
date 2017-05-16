@@ -1,10 +1,3 @@
-//============================================================================
-// Name        : CPP_AXControl.cpp
-// Author      : JCA
-// Version     :
-// Copyright   : GPL
-// Description : Hello World in C++, Ansi-style
-//============================================================================
 
 #include <iostream>
 using namespace std;
