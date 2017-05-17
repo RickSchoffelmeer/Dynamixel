@@ -9,8 +9,8 @@ using namespace std;
 int main() {
 	cout << "AX Control starts" << endl; // prints AX Control
     
-    pinMode(5, OUTPUT);
-    digitalWrite(5, LOW);
+    pinMode(7, OUTPUT);
+    digitalWrite(7, LOW);
 	int error=0;
 	int idAX12=11;
 
@@ -25,10 +25,10 @@ int main() {
 		int pos=dynamixel.getPosition(&serialPort, idAX12);
         
         if (pos>250 && pos <1023){
-            digitalWrite(5, HIGH);
+            digitalWrite(7, HIGH);
 			dynamixel.setPosition(&serialPort, idAX12, pos-100);
             delay(100);
-            digitalWrite(5, LOW);
+            digitalWrite(7, LOW);
         }
         else {
 			printf ("\nPosition <%i> under 250 or over 1023\n", pos);
