@@ -16,7 +16,7 @@ class Ax12:
     AX_MODEL_NUMBER_L = 0
     AX_MODEL_NUMBER_H = 1
     AX_VERSION = 2
-    AX_ID = 11
+    AX_ID = 32
     AX_BAUD_RATE = 4
     AX_RETURN_DELAY_TIME = 5
     AX_CW_ANGLE_LIMIT_L = 6
