@@ -5,16 +5,6 @@ import math
 sys.path.append("..")
 from ax12 import ax12
 
-class MyServer(ServerThread):
-    def __init__(self):
-        ServerThread.__init__(self, 8888)
-
-    @make_method('/angles', 'ffffff')
-    def foo_callback(self, path, args):
-        #print args
-        #print map(lambda x:math.degrees(x),args)
-        anglesData.append(args)
-
 def moveMotors():
     #print "wrinting on the motors..."
     angles = anglesData[0]
