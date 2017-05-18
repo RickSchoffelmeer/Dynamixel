@@ -326,7 +326,7 @@ class Ax12:
         outData += chr(checksum)
         Ax12.port.write(outData)
         sleep(Ax12.TX_DELAY_TIME)
-        #return self.readData(id)
+        return self.readData(id)
 
     def moveSpeed(self, id, position, speed):
         self.direction(Ax12.RPI_DIRECTION_TX)
