@@ -3,7 +3,7 @@ from time import sleep,time
 from random import random
 import math
 sys.path.append("..")
-from ax12 import ax12
+from ax12 import Ax12
 
 def moveMotors():
     #print "wrinting on the motors..."
