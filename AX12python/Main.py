@@ -1,4 +1,3 @@
-from liblo import *
 import sys
 from time import sleep,time
 from random import random
