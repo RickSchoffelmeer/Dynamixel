@@ -59,29 +59,7 @@ def initMotors():
         p = 1320 - p
         sleep(3.7)
 
-
-
-def setup():
-    global server, anglesData
-
-    anglesData = []
-
-    #starting oscSever
-    try:
-        server = MyServer()
-    except ServerError, err:
-        print str(err)
-        sys.exit()
-
-    print "Starting Server..."
-    server.start()
-
-    #inicializing servos
-    initMotors()
-
-
 if __name__=="__main__":
-    setup()
     timeAverage = 0
     count = 0
     try :
