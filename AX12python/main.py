@@ -1,5 +1,5 @@
 from time import sleep
-from ax12 import ax12
+import ax12 as ax12
 import sys
 sys.path.append("../")
 
