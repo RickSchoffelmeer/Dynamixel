@@ -9,14 +9,12 @@ using namespace std;
 int main() {
 	cout << "AX Control starts" << endl; // prints AX Control
     
-    pinMode(0, OUTPUT);
-    digitalWrite(0, LOW);
 	int error=0;
 	int idAX12=11;
 
 	SerialPort serialPort;
 	Dynamixel dynamixel;
-    char dev[14] = {'/','/','d','e','v','/','/','t','t','y','A','M','A','0'};
+    char dev[12] = {'/','/','d','e','v','/','/','t','t','y','S','0'};
 
 
 	if (serialPort.connect(dev)!=0) {
@@ -25,10 +23,7 @@ int main() {
 		int pos=dynamixel.getPosition(&serialPort, idAX12);
         
         if (pos>250 && pos <1023){
-            digitalWrite(0, HIGH);
 			dynamixel.setPosition(&serialPort, idAX12, pos-100);
-            delay(100);
-            digitalWrite(0, LOW);
         }
         else {
 			printf ("\nPosition <%i> under 250 or over 1023\n", pos);
