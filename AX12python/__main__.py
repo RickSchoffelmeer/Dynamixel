@@ -3,10 +3,11 @@ from time import sleep,time
 sys.path.append("..")
 import ax12 as ax12
 
+a = Ax12()
 if __name__=="__main__":
-	ax12.move(11, 10)
+	a.move(11, 10)
 	time.sleep(2)
-	ax12.move(11, 30)
+	a.move(11, 30)
 	time.sleep(2)
 			
 
