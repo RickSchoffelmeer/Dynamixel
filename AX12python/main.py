@@ -4,7 +4,7 @@ import sys
 sys.path.append("../")
 
 servos= ax12.Ax12();
-sevos.__init__();
+servos.__init__();
 
 while (1):
 	servos.move(32,500)
