@@ -5,7 +5,7 @@ sys.path.append("../")
 
 servos= ax12.Ax12();
 
-while true:
+while (1):
 	servos.move(9,500)
 	time.sleep(2)
 	servos.move(9,800)
